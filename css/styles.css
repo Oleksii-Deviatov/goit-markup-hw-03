@@ -350,12 +350,16 @@ body {
 }
 
 .address-footer-list-item-address-link {
+  margin-bottom: 8px;
   font-weight: 400;
   font-size: 14px;
   line-height: 1.71;
   color: var(--text-white-color);
 }
 
+.address-footer-list-item {
+  margin-bottom: 8px;
+}
 .address-footer-list-item-link {
   font-weight: 400;
   font-size: 14px;
