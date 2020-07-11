@@ -24,9 +24,8 @@ html {
 }
 
 body {
-  /* background-color: var(--main-background); */
-  /* фон для  проверки */
-  background-color: rgb(212, 212, 212);
+  background-color: var(--main-background);
+  /* background-color: teal; */
   font-family: var(--main-font);
   font-size: 14px;
   font-style: normal;
@@ -65,7 +64,7 @@ body {
   width: 1200px;
   padding-left: 15px;
   padding-right: 15px;
-  outline: 1px solid tomato;
+  /* outline: 1px solid tomato; */
 }
 
 /* хедер */
@@ -146,6 +145,8 @@ body {
 }
 
 .button {
+  margin: 0;
+  padding: 0;
   width: 200px;
   height: 50px;
   font-weight: 700;
@@ -171,14 +172,23 @@ body {
 
 .advantages {
   padding-top: 94px;
-  padding-bottom: 94px;
+  padding-bottom: 47px;
 }
 
-.advantages .container {
+.advantages-list {
+  display: flex;
 }
 
 .advantages-list-icon {
   margin-bottom: 30px;
+}
+
+.advantages-list-item {
+  width: calc((100% - 90px) / 4);
+}
+
+.advantages-list-item:not(:last-child) {
+  margin-right: 30px;
 }
 
 .advantages-list-title {
@@ -198,21 +208,69 @@ body {
 /* Чем мы занимаемся */
 
 .what-we-do {
-  padding-top: 94px;
+  padding-top: 47px;
   padding-bottom: 94px;
 }
+
+.what-we-do-list {
+  display: flex;
+}
+
+.what-we-do-img {
+  display: block;
+}
+
 .what-we-do-img-title {
   font-weight: 700;
   line-height: 1.14;
   text-align: center;
   text-transform: uppercase;
   color: var(--text-white-color);
+  background-color: rgba(47, 48, 58, 0.8);
+  display: block;
+  height: 70px;
+  padding-top: 27px;
+  padding-bottom: 27px;
+}
+
+.what-we-do-list {
+  width: calc((100% - 60) / 3);
+}
+
+.what-we-do-list-item:not(:last-child) {
+  margin-right: 30px;
 }
 
 /* Наша команда */
 .our-team {
   padding-top: 94px;
   padding-bottom: 94px;
+}
+
+.our-team-list {
+  display: flex;
+}
+
+.our-team .social-list {
+  display: flex;
+  justify-content: center;
+}
+
+.social-list-item:not(:last-child) {
+  margin-right: 10px;
+}
+
+.our-team-list-item {
+  width: calc((100% - 90px) / 4);
+  padding-bottom: 32px;
+}
+
+.our-team-list-item:not(:last-child) {
+  margin-right: 30px;
+}
+
+.our-team-photo {
+  display: block;
 }
 
 .our-team-list-item-title,
@@ -243,16 +301,58 @@ body {
   padding-top: 94px;
   padding-bottom: 94px;
 }
+
+.clients-list {
+  display: flex;
+  justify-content: center;
+}
+
+.clients-list-item-link {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  width: 170px;
+  height: 90px;
+  border: 1px solid #afb1b8;
+  border-radius: 4px;
+}
+
+.clients-list-item:not(:last-child) {
+  margin-right: 30px;
+}
 /* футер */
+
+.footer .container {
+  display: flex;
+  align-items: baseline;
+}
+
+.footer .social-list {
+  display: flex;
+  justify-content: center;
+}
 
 .footer {
   background-color: var(--footer-background-color);
   padding-top: 50px;
   padding-bottom: 50px;
 }
+
+.footer .logo {
+  margin-bottom: 20px;
+}
+
+.fotter-logo--and-address {
+  margin-right: 69px;
+}
+
+.container-fotter-sign {
+  margin-left: auto;
+}
 .logo-studio {
   color: #ffffff;
 }
+
 .address-footer-list-item-address-link {
   font-weight: 400;
   font-size: 14px;
@@ -274,6 +374,8 @@ body {
   line-height: 16px;
   text-transform: uppercase;
   color: var(--text-white-color);
+  display: block;
+  padding-bottom: 20px;
 }
 
 /* портфолио */
