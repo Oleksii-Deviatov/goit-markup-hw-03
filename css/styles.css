@@ -64,7 +64,6 @@ body {
   width: 1200px;
   padding-left: 15px;
   padding-right: 15px;
-  /* outline: 1px solid tomato; */
 }
 
 /* хедер */
@@ -230,7 +229,7 @@ body {
 }
 
 .what-we-do-list {
-  width: calc((100% - 60) / 3);
+  width: calc((100% - 60px) / 3);
 }
 
 .what-we-do-list-item:not(:last-child) {
@@ -238,9 +237,11 @@ body {
 }
 
 /* Наша команда */
+
 .our-team {
   padding-top: 94px;
   padding-bottom: 94px;
+  background-color: var(--secondary-white-color);
 }
 
 .our-team-list {
@@ -258,7 +259,11 @@ body {
 
 .our-team-list-item {
   width: calc((100% - 90px) / 4);
-  padding-bottom: 32px;
+  padding-bottom: 24px;
+  background: var(--main-background);
+  box-shadow: 0px 2px 1px rgba(0, 0, 0, 0.2), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 1px 3px rgba(0, 0, 0, 0.12);
+  border-radius: 0px 0px 4px 4px;
 }
 
 .our-team-list-item:not(:last-child) {
@@ -316,7 +321,6 @@ body {
 .clients-list-item:not(:last-child) {
   margin-right: 30px;
 }
-/* футер */
 
 .footer .container {
   display: flex;
