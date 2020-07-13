@@ -148,6 +148,10 @@ body {
 .main-title {
   margin-top: 0;
   margin-bottom: 30px;
+  margin-left: auto;
+  margin-right: auto;
+  width: 696px;
+  
 
   color: var(--primary-white-color);
 
